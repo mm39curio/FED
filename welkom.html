@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Front End Developer</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- fullpage.js Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.21/fullpage.min.css">
+  <style>
+    :root {
+      --primary-bg: #f5f2e9; /* Beige-like background */
+      --accent-color: #03357c; /* Warm brown accent */
+      --text-color: #4a4a4a; /* Darker text color */
+      --button-bg: #03357c; /* Button background */
+      --button-hover-bg: #03357c; /* Button hover background */
+      --button-text-color: #ffffff; /* Button text color */
+    }
+
+    /* General Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .section {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: var(--primary-bg);
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      margin: 0;
+      color: var(--text-color);
+      font-weight: 600;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: var(--accent-color);
+      margin-top: 10px;
+      font-weight: 400;
+    }
+
+    .start-button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 1.2rem;
+      font-family: 'Poppins', sans-serif;
+      color: var(--button-text-color);
+      background: var(--button-bg);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .start-button:hover {
+      background: var(--button-hover-bg);
+    }
+
+    /* Section-Specific Styles */
+    #section1 h1 {
+      color: var(--accent-color);
+    }
+
+    #section3 h2 {
+      font-weight: bold;
+    }
+
+    /* Split Layout for the slide */
+.slide-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-placeholder {
+  flex: 1; /* Left side takes 50% */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ddd; /* Light gray background as fallback */
+}
+
+.slide-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the area */
+}
+
+.fp-watermark {
+  display: none;
+}
+
+.slide-content {
+  flex: 1; /* Right side takes 50% */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Align text to the left */
+  padding: 50px;
+  background: var(--primary-bg); /* Beige background */
+}
+
+.slide-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.slide-content h2 {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+}
+
+.slide-content h3 {
+  font-size: 1.2rem;
+  color: var(--accent-color);
+}
+
+  </style>
+</head>
+<body>
+  <div id="fullpage">
+    <!-- Section 1: Welcome Screen -->
+    <div class="section" id="section1">
+        <h1>Welkom bij de voorlichting van</h1>
+        <img style="width: 200px" src="img/curio.png" alt="">
+        <h2>Front-end Developer N3 <br> <small>(Allround Mediamaker)</small>  </h2>
+        <button class="start-button" onclick="fullpage_api.moveSectionDown()">Laten we beginnen!</button>
+        <img style=" width: 250px; position: absolute; left: 200px; bottom: 150px" src="img/design.png" alt="">    
+        <img src="img/development.png" style="width: 250px; position: absolute; right: 200px; bottom: 150px" alt="">
+    </div>
+
+    <!-- Section 2: Content Overview -->
+    <div class="section" id="section2">
+        <img src="img/curio.png" style="width: 100px; position: absolute; right: 100px; top: 50px;" alt="">
+
+        <div class="slide-container">
+          <!-- Left Side: Full Image -->
+          <div class="slide-placeholder">
+            <img src="img/background1.jpg" alt="Placeholder Image" />
+          </div>
+      
+          <!-- Right Side: Content -->
+            <div class="slide-content">
+                <h1>Front-end Developer: De Feiten</h1>
+                <h2>Opleiding gestart in: <b>September 2024</b></h2>
+                <h2>Aantal studenten Leerjaar 1: <b>11</b></h2>
+                <h2>Aantal studenten Leerjaar 2: <b>20</b></h2>
+                <h2>MBO Niveau: <b>3</b></h2>
+                <h2>Opleidingsduur: <b>3 jaar</b></h2>
+                <h2>We zijn aan het groeien: 🚀🚀🚀 </h2>
+            </div>
+        </div>
+      </div>
+      
+
+      <div class="section" id="section3">
+        <img src="img/curio.png" style="width: 100px; position: absolute; right: 100px; top: 50px;" alt="Curio Logo">
+        <!-- Content -->
+        <h1>Front-end developer is:</h1>
+        <h2>Allround opgeleid worden in het designen en creëren van media</h2>
+        <div class="columns" style="display: flex; justify-content: space-between">
+            <div class="content">
+                <h3>Website design</h3>
+                <h3>Websites ontwikkelen</h3>
+                <h3>Logo's ontwikkelen</h3>
+                <h3>Posters creëren</h3>
+                <h3>Webshops beheren</h3>
+            </div>
+            <div class="content">
+                <h3>Branding van nieuwe producten</h3>
+                <h3>Huisstijlen toepassen</h3>
+                <h3>Mobiele apps designen</h3>
+                <h3>Marketingcampagnes</h3>
+                <h3>Social Media</h3>
+                <h3>Nog zoveel meer...</h3>
+            </div>
+        </div>
+  
+      </div>
+
+      <div class="section" id="section4">
+        <img src="img/curio.png" style="width: 100px; position: absolute; right: 100px; top: 50px;" alt="Curio Logo">
+        <!-- Content -->
+        <h1>Front-end developer is:</h1>
+        <h2>Samen enthousiast aan de slag met de juiste tools!</h2>
+        <h3>Betrokkenheid / Aanwezigheid / Behulpzaam </h3>
+        <h3>Van elkaar leren</h3>
+        <h3>Je eigen richting kiezen</h3>
+        <h3>Mooie combinatie van klassikale lessen en zelfstandig trainen </h3>
+        <h3>Veel en gevarieerd projectwerk (klein, groot, alleen, in groep)</h3>
+        <h3>Ruimte voor werken op eigen tempo</h3>
+      </div>
+
+      <div class="section">
+        <img src="img/curio.png" style="width: 100px; position: absolute; right: 100px; top: 50px;" alt="Curio Logo">
+        <!-- Content -->
+        <h1>Opbouw van de opleiding:</h1>
+        <img src="img/rooster.png" alt="">
+      </div>
+
+      <div class="section">
+        <img src="img/curio.png" style="width: 100px; position: absolute; right: 100px; top: 50px;" alt="Curio Logo">
+        <!-- Content -->
+        <h1>Weekrooster voorbeeld:</h1>
+        <img style="width: 650px" src="img/rooster-1.png" alt="">
+      </div>
+
+      <div class="section">
+        <img src="img/curio.png" style="width: 100px; position: absolute; right: 100px; top: 50px;" alt="Curio Logo">
+        <!-- Content -->
+        <h1>Lesmodules:</h1>
+        <div class="contents" style="display: flex; justify-content: space-between; gap: 100px;">
+            <div class="content" style="width: 350px; background: var(--accent-color)">
+                <h2 style="color: white">Design:</h2>
+                <div style="color: white">
+                    <h3>Basis Design</h3>
+                    <h3>Pakkettraining Adobe</h3>
+                    <h3>Campagnes & Mediauitingen</h3>
+                    <h3>Design concept doorvoeren</h3>
+                </div>
+            </div>
+            <div class="content"  style="width: 350px; background: var(--accent-color)">
+                <h2 style="color: white">Development:</h2>
+                <div style="color: white">
+                    <h3>Basis HTML / CSS</h3>
+                    <h3>Layouts maken met HTML / CSS</h3>
+                    <h3>Responsive Webdesign</h3>
+                    <h3>Interacties met javaScript</h3>
+                    <h3>Wordpress</h3>
+                </div>
+           
+            </div>
+            <div class="content"  style="width: 350px; background: var(--accent-color)">
+                <h2 style="color: white">Marketing:</h2>
+                <div style="color: white">
+                    <h3>SEO</h3>
+                    <h3>Social Media</h3>
+                    <h3>Google Analytics</h3>
+                    <h3>Marketingcampagnes</h3>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <img src="img/curio.png" style="width: 100px; position: absolute; right: 100px; top: 50px;" alt="Curio Logo">
+        <!-- Content -->
+        <h1>Projecten</h1>
+        <h3>Project/werkplaats in de middag</h3>
+        <h3>Praktijkgericht</h3>
+        <h3>Van intern naar extern (echte opdrachtgevers)</h3>
+        <h3>Zowel individueel als in groepen</h3>
+        <h3>Verschillend in complexiteit en duur</h3>
+        <img src="img/huisstijl.png" style="transform: rotate(-20deg); width: 500px; position: absolute; left: 50px; bottom: 100px" alt="">
+        <img src="img/project2.png" style="width: 500px; transform: rotate(10deg); position: absolute; right: 70px; bottom: 400px "alt="">
+      </div>
+
+        <div class="section" id="section5">
+            <img src="img/curio.png" style=" width: 100px; position: absolute; right: 100px; top: 50px;" alt="Curio Logo">
+            <!-- Content -->
+            <h1>Front-end developer is:</h1>
+            <h2>De alleskunner in de digitale wereld!</h2>
+            <h3>De vraag is groot</h3>
+            <h3>De mogelijkheden zijn eindeloos</h3>
+            <h3>De technologie blijft zich ontwikkelen</h3>
+            <h3>De wereld wordt steeds digitaler</h3>
+            <h3>Ook in een wereld vol AI ben je belangrijk</h3>
+        </div>
+
+          <div class="section" id="section2">
+            <img src="img/curio.png" style=" width: 100px; position: absolute; right: 100px; top: 50px;" alt="Curio Logo">
+
+            <div class="slide-container">
+              <!-- Left Side: Full Image -->
+              <div class="slide-placeholder">
+                <img src="img/ai.jpg" alt="" />
+              </div>
+            <div class="slide-content">
+            <!-- Content -->
+            <h1>AI bouwt...</h1>
+            <h2>Maar developers bepalen!</h2>
+            <h3>AI moet getest en gecontroleerd worden op kwaliteit</h3>
+            <h3>Creativiteit, innovatie en probleemoplossend vermogen blijft mensenwerk</h3>
+            <h3>Klantbegrip blijft mensenwerk</h3>
+            <h3>AI heeft instructie nodig van mensen die begrip hebben van systemen en code</h3>
+            <h3>&nbsp;</h3>
+            <h2>Zonder menselijke creativiteit, visie en samenwerking blijft AI slechts gereedschap</h2>
+            </div>
+            </div>
+        </div>
+
+        <div class="section" id="section2">
+            <img src="img/curio.png" style="width: 100px; position: absolute; right: 100px; top: 50px;" alt="">
+    
+            <div class="slide-container">
+              <!-- Left Side: Full Image -->
+              <div class="slide-placeholder">
+                <img src="img/group_1.jpg" alt="" />
+              </div>
+          
+              <!-- Right Side: Content -->
+                <div class="slide-content">
+                    <h1>Waar ga je later aan de slag?</h1>
+                    <h3>Reclamebureaus</h3>
+                    <h3>Web bedrijven</h3>
+                    <h3>Als content creator bij grote bedrijven</h3>
+                    <h3>Gemeentes</h3>
+                    <h3>DTP'er / Drukkerijen </h3>
+                    <h3>Eigen bedrijf?</h3>
+                </div>
+            </div>
+          </div>
+
+        <div class="section" id="section5">
+            <img src="img/curio.png" style=" width: 100px; position: absolute; right: 100px; top: 50px;" alt="Curio Logo">
+            <!-- Content -->
+            <h1>Vacature voorbeelden</h1>
+            <div class="contents" style="display: flex; justify-content: space-around">
+                <div class="content" style="width: 45%">
+                    <img style="width: 100%" src="img/vac_1.png" alt="">
+                </div>
+                <div class="content" style="width: 45%">
+                    <img style="width: 80%" src="img/vac_2.png" alt="">
+                    <img style="width: 50%; margin-top: 20px" src="img/vac_3.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    
+        <div class="section">
+            <img src="img/curio.png" style="width: 100px; position: absolute; right: 100px; top: 50px;" alt="Curio Logo">
+            <!-- Content -->
+            <h1>Na de opleiding:</h1>
+            <h2>Doorstromen naar niveau 4 Mediavormgever</h2>
+            <h2>Doorstromen naar niveau 4 Software Developer</h2>
+            <h2>Doorstromen naar niveau 4 Content Creator</h2>
+            <h2>Werken in de praktijk</h2>
+        </div>
+    
+        <div class="section" id="">
+            <img src="img/curio.png" style="width: 100px; position: absolute; left: 50px; top: 50px;" alt="">
+    
+            <div class="slide-container">
+              <!-- Right Side: Content -->
+                <div class="slide-content">
+                    <h1>Ervaar de opleiding!</h1>
+                    <h2>Stel vragen, kijk rond</h2>
+                    <h2>Bekijk wat onze huidige studenten hebben gemaakt</h2>
+                    <h2>Loop een dagje mee (aanmelden via website)</h2>
+                    <h2>Voor 1 April aanmelden voor opleiding</h2>
+                </div>
+              <div class="slide-placeholder">
+                <img src="img/ervaar.jpg" alt="" />
+              </div>
+          
+            </div>
+        </div>
+
+        <div class="section" id="section1">
+            <h1>Hopelijk tot ziens bij</h1>
+            <img style="width: 200px" src="img/curio.png" alt="">
+            <h2>Front-end Developer N3 <br> <small>(Allround Mediamaker)</small>  </h2>
+            <a style="display: block; text-decoration: none;" href="https://www.curio.nl/mbo/techniek-en-technologie/softwaredeveloper/front-end-developer#extrainfo" class="start-button">Ga mee op media avontuur!</a>
+            <img style=" width: 250px; position: absolute; left: 200px; bottom: 150px" src="img/design.png" alt="">    
+            <img src="img/development.png" style="width: 250px; position: absolute; right: 200px; bottom: 150px" alt="">
+        </div>
+
+       
+  </div> 
+
+  <!-- fullpage.js Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.21/fullpage.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      new fullpage('#fullpage', {
+        navigation: true, // Enable navigation dots
+        navigationPosition: 'right',
+        scrollingSpeed: 800, // Smooth scrolling speed
+      });
+    });
+  </script>
+</body>
+</html>
