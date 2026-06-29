@@ -1,0 +1,115 @@
+:root {
+      --primary-bg: #f5f2e9; /* Beige-like background */
+      --accent-color: #03357c; /* Warm brown accent */
+      --text-color: #4a4a4a; /* Darker text color */
+      --button-bg: #03357c; /* Button background */
+      --button-hover-bg: #03357c; /* Button hover background */
+      --button-text-color: #ffffff; /* Button text color */
+    }
+
+    /* General Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .section {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: var(--primary-bg);
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      margin: 0;
+      color: var(--text-color);
+      font-weight: 600;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: var(--accent-color);
+      margin-top: 10px;
+      font-weight: 400;
+    }
+
+    .start-button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 1.2rem;
+      font-family: 'Poppins', sans-serif;
+      color: var(--button-text-color);
+      background: var(--button-bg);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .start-button:hover {
+      background: var(--button-hover-bg);
+    }
+
+    /* Section-Specific Styles */
+    #section1 h1 {
+      color: var(--accent-color);
+    }
+
+    #section3 h2 {
+      font-weight: bold;
+    }
+
+    /* Split Layout for the slide */
+.slide-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-placeholder {
+  flex: 1; /* Left side takes 50% */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ddd; /* Light gray background as fallback */
+}
+
+.slide-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the area */
+}
+
+.fp-watermark {
+  display: none;
+}
+
+.slide-content {
+  flex: 1; /* Right side takes 50% */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Align text to the left */
+  padding: 50px;
+  background: var(--primary-bg); /* Beige background */
+}
+
+.slide-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.slide-content h2 {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+}
+
+.slide-content h3 {
+  font-size: 1.2rem;
+  color: var(--accent-color);
+}
