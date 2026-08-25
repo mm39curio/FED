@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Front End Developer</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- fullpage.js Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.21/fullpage.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="fullpage">
+    <!-- Section 1: Welcome Screen -->
+    <div class="section" id="section1">
+        <h1>Welkom bij de informatie-ochtend van</h1>
+        <img style="width: 200px" src="img/curio.png" alt="">
+        <h2>Front-end Developer N3 <br> <small>(Allround Mediamaker)</small>  </h2>
+        <button class="start-button" onclick="fullpage_api.moveSectionDown()">Laten we beginnen!</button>
+        <img style=" width: 250px; position: absolute; left: 200px; bottom: 150px" src="img/design.png" alt="">    
+        <img src="img/development.png" style="width: 250px; position: absolute; right: 200px; bottom: 150px" alt="">
+    </div>
+
+    <!-- Section 2: Content Overview -->
+    <div class="section" id="section2">
+        <img src="img/curio.png" style="width: 100px; position: absolute; right: 100px; top: 50px;" alt="">
+
+        <div class="slide-container">
+          <!-- Left Side: Full Image -->
+          <div class="slide-placeholder">
+            <img src="img/background1.jpg" alt="Placeholder Image" />
+          </div>
+      
+          <!-- Right Side: Content -->
+            <div class="slide-content">
+                <h1>Deze ochtend</h1>
+                <h2>Voorstellen docenten: <b>Wie is wie?</b></h2>
+                <h2>Opleiding in het kort</h2>
+                <h2>Lesmodules & Projecten</h2>
+                <h2>Het Rooster</h2>
+                <h2>Leermiddelen/Laptop</h2>
+                <h2>Officiële documenten & Praktische zaken</h2>
+                <h2>Vragen & Ondersteuning</h2>
+                <button class="start-button" onclick="fullpage_api.moveSectionDown()"><i class='bx bxs-down-arrow' ></i></button>
+            </div>
+        </div>
+      </div>
+      
+
+      <div class="section" id="section3">
+        <img src="img/curio.png" style="width: 100px; position: absolute; right: 100px; top: 50px;" alt="Curio Logo">
+        <!-- Content -->
+        <h1>Voorstellen Docenten</h1>
+        <h2></h2>
+        <div class="contents" style="display: flex; justify-content: space-between; gap: 50px;">
+            <div class="content" style="width: 300px; background: var(--accent-color)">
+                <h2 style="color: white">Michel</h2>
+                <div style="color: white">
+                    Development <br> Project <br> Design <br> &nbsp;
+                </div>
+            </div>
+            <div class="content"  style="width: 300px; background: var(--accent-color)">
+                <h2 style="color: white">Sander</h2>
+                <div style="color: white">
+                    Design <br> Project <br> &nbsp;
+                    
+                </div>
+           
+            </div>
+            <div class="content"  style="width: 300px; background: var(--accent-color)">
+                <h2 style="color: white">Michael</h2>
+                <div style="color: white">
+                    Development <br> Project <br> &nbsp;
+                    
+                </div>
+            </div>
+            <div class="content"  style="width: 300px; background: var(--accent-color)">
+                <h2 style="color: white">Quincy</h2>
+                <div style="color: white">
+                    Design <br> Development <br> Project <br> &nbsp;
+                    
+                </div>
+            </div>
+            <div class="content"  style="width: 300px; background: var(--accent-color)">
+                <h2 style="color: white">Generiek</h2>
+                <div style="color: white">
+                    Nederlands: <b>Joep</b> <br> Rekenen: <b>Jip</b> <br> Burgerschap: <b>Marieke</b> <br> &nbsp;
+                    
+                </div>
+            </div>
+            
+        </div>
+        <button class="start-button" onclick="fullpage_api.moveSectionDown()"><i class='bx bxs-down-arrow' ></i></button>
+  
+      </div>
+
+      <div class="section" id="section4">
+        <img src="img/curio.png" style="width: 100px; position: absolute; right: 100px; top: 50px;" alt="Curio Logo">
+        <!-- Content -->
+        <h1>Opleiding in het kort</h1>
+        <h2>Hoe zit de opleiding in elkaar?</h2>
+        <h3>3-jarige opleiding</h3>
+        <h3>Twee hoofdvakken: Development & Design</h3>
+        <h3>Basiskennis & Verdieping</h3>
+        <h3>Werken aan projecten - Zowel alleen als in teams</h3>
+        <h3>Nederlands - Rekenen -  Burgerschap</h3>
+        <h3>Mentoruur & mentorgesprekken</h3>
+        <h3>Later in de opleiding: Keuzedelen & Marketing</h3>
+        <button class="start-button" onclick="fullpage_api.moveSectionDown()"><i class='bx bxs-down-arrow' ></i></button>
+      </div>
+
+      <div class="section" id="section5">
+        <img src="img/curio.png" style="width: 100px; position: absolute; right: 100px; top: 50px;" alt="Curio Logo">
+        <!-- Content -->
+        <h1>Opbouw van de opleiding:</h1>
+        <img src="img/rooster.png" alt=""><br>
+        <button class="start-button" onclick="fullpage_api.moveSectionDown()"><i class='bx bxs-down-arrow' ></i></button>
+      </div>
+
+      <div class="section">
+        <img src="img/curio.png" style="width: 100px; position: absolute; right: 100px; top: 50px;" alt="Curio Logo">
+        <!-- Content -->
+        <h1>Weekrooster voorbeeld:</h1>
+        <img style="width: 1200px" src="img/rooster26a.png" alt=""><br>
+        <button class="start-button" onclick="fullpage_api.moveSectionDown()"><i class='bx bxs-down-arrow' ></i></button>
+      </div>
+
+      <div class="section" id="section6">
+        <img src="img/curio.png" style="width: 100px; position: absolute; right: 100px; top: 50px;" alt="Curio Logo">
+        <!-- Content -->
+        <h1>Lesmodules:</h1>
+        <div class="contents" style="display: flex; justify-content: space-between; gap: 100px;">
+            <div class="content" style="width: 350px; background: var(--accent-color)">
+                <h2 style="color: white">Design:</h2>
+                <div style="color: white">
+                    <h3>Basis Design</h3>
+                    <h3>Pakkettraining Adobe</h3>
+                    <h3>Campagnes & Mediauitingen</h3>
+                    <h3>Design concept doorvoeren</h3>
+                    <h3>Figma</h3>
+                </div>
+            </div>
+            <div class="content"  style="width: 350px; background: var(--accent-color)">
+                <h2 style="color: white">Development:</h2>
+                <div style="color: white">
+                    <h3>Basis HTML / CSS</h3>
+                    <h3>Layouts maken met HTML / CSS</h3>
+                    <h3>Responsive Webdesign</h3>
+                    <h3>Interacties met javaScript</h3>
+                    <h3>Wordpress</h3>
+                </div>
+           
+            </div>
+            <div class="content"  style="width: 350px; background: var(--accent-color)">
+                <h2 style="color: white">Projecten:</h2>
+                <div style="color: white">
+                    <h3>Hier komt alles samen</h3>                  
+                </div>
+            </div>
+        </div>
+        <button class="start-button" onclick="fullpage_api.moveSectionDown()"><i class='bx bxs-down-arrow' ></i></button>
+      </div>
+
+      <div class="section" id="section7">
+        <img src="img/curio.png" style="width: 100px; position: absolute; right: 100px; top: 50px;" alt="Curio Logo">
+        <!-- Content -->
+        <h1>Projecten</h1>
+        <h3>Project/werkplaats (bijna altijd) in de middag</h3>
+        <h3>Praktijkgericht</h3>
+        <h3>Van intern naar extern (echte opdrachtgevers)</h3>
+        <h3>Zowel individueel als in groepen</h3>
+        <h3>Verschillend in complexiteit en duur</h3>
+        <img src="img/huisstijl.png" style="transform: rotate(-20deg); width: 500px; position: absolute; left: 50px; bottom: 100px" alt="">
+        <img src="img/project2.png" style="width: 500px; transform: rotate(10deg); position: absolute; right: 70px; bottom: 400px "alt="">
+        <button class="start-button" onclick="fullpage_api.moveSectionDown()"><i class='bx bxs-down-arrow' ></i></button>
+      </div>
+
+      <div class="section" id="section8">
+        <img src="img/curio.png" style="width: 100px; position: absolute; right: 100px; top: 50px;" alt="Curio Logo">
+        <!-- Content -->
+        <h1>Officiële Documenten</h1>
+        <h3>Brief 'Inschrijving MBO'</h2>
+        <h3>Aanmeldbrief Portaal/Osiris</h3>
+        <button class="start-button" onclick="fullpage_api.moveSectionDown()"><i class='bx bxs-down-arrow' ></i></button>
+        <img src="img/briefmbo.png" style="transform: rotate(-20deg); width: 500px; position: absolute; left: 50px; bottom: 50px" alt="">
+        <img src="img/email.png" style="width: 500px; transform: rotate(10deg); position: absolute; right: 70px; bottom: 250px "alt="">
+      </div>
+
+
+        <div class="section" id="section9">
+            <img src="img/curio.png" style=" width: 100px; position: absolute; right: 100px; top: 50px;" alt="Curio Logo">
+            <!-- Content -->
+            <h1>Vragen & Ondersteunung</h1>
+            <h2>Waar kan ik terecht met vragen en voor ondersteuning?</h2>
+            <h3>Je eigen mentor</h3>
+            <h3>Ondersteuner in ons eigen team</h3>
+            <h3>Ondersteuningsteam van Curio</h3>
+            <h3>Servicecentrum van Curio</h3>
+            <h3>&nbsp;</h3>
+            <h2><b>Dyslexieverklaring of andere zorgvraag?</h2> 
+            <h3>Laat het ons weten, we kunnen je pas goed helpen als dingen netjes zijn geregistreerd. <br>Zorg dat het digitaal is en neem mee naar eerste mentorles.</h3>
+            <button class="start-button" onclick="fullpage_api.moveSectionDown()"><i class='bx bxs-down-arrow' ></i></button>
+        </div>
+
+        
+
+        <div class="section" id="section10">
+            <img src="img/curio.png" style="width: 100px; position: absolute; right: 100px; top: 50px;" alt="">
+    
+            <div class="slide-container">
+              <!-- Left Side: Full Image -->
+              <div class="slide-placeholder">
+                <img src="img/mbowebshop.png" alt="" />
+              </div>
+          
+              <!-- Right Side: Content -->
+                <div class="slide-content">
+                    <h1>Leermiddelen</h1>
+                    <h2>MBOwebshop.nl</h2>
+                    <h3>Lesgeld</h3>
+                    <h3>Laptop</h3>
+                    <h3>Licentie Adobe Creative Suite</h3>
+                    <h3>Inloggen met je schoolaccount</h3>
+                    <h3>Licenties Nederlands & Rekenen nog niet aanschaffen.<br> Je docent helpt je daar komend schooljaar mee</h3>
+                    <h2>Lijstnummer: TT27109BOL1BR</h2>
+                    <button class="start-button" onclick="fullpage_api.moveSectionDown()"><i class='bx bxs-down-arrow' ></i></button>
+                </div>
+            </div>
+            
+          </div>
+    
+        <div class="section" id="section11">
+            <img src="img/curio.png" style="width: 100px; position: absolute; left: 50px; top: 50px;" alt="">
+    
+            <div class="slide-container">
+              <!-- Right Side: Content -->
+                <div class="slide-content">
+                    <h1>Laptop:</h1>
+                    <h2>Zorg dat je een laptop hebt 'geschikt voor fotobewerking'</h2>
+                    <h2>Windows of MacOS (Apple)</h2>
+                    <h2><b>GEEN Chromebook</b> - deze zijn te beperkt</h2>
+                    <h2>licentie Adobe CS via slim.nl</h2>
+                    <button class="start-button" onclick="fullpage_api.moveSectionDown()"><i class='bx bxs-down-arrow' ></i></button>
+                </div>
+              <div class="slide-placeholder">
+                <img src="img/ervaar.jpg" alt="" />
+              </div>
+          
+            </div>
+        </div>
+
+         <div class="section" id="section12">
+            <img src="img/curio.png" style=" width: 100px; position: absolute; right: 100px; top: 50px;" alt="Curio Logo">
+            <!-- Content -->
+            <h1>Contact met je mentor</h1>
+            <h2>Michel Meeuwesen</h2>
+            <h3>mm39@curio.nl</h3>
+            <h3>Altijd bereikbaar via Teams</h3>
+            <h3>&nbsp;</h3>
+            <h2>Overige vragen</h2>
+            <h3>088 209 8000 (infopunt)</h3>
+            <h3>Infopunt@curio.nl</h3>
+            <button class="start-button" onclick="fullpage_api.moveSectionDown()"><i class='bx bxs-down-arrow' ></i></button>
+        </div>
+
+        <div class="section" id="section13">
+            <img src="img/curio.png" style="width: 100px; position: absolute; left: 50px; top: 50px;" alt="">
+    
+            <div class="slide-container">
+              <!-- Right Side: Content -->
+                <div class="slide-content">
+                    <h1>Start van het schooljaar</h1>
+                    <h2>Introkamp</h2>
+                    <h3>Van donderdag 27 augustus 12:00 t/m vrijdag 28 augustus: 14:00</h3>
+                    <h2>Eerste lesdag</h2>
+                    <h3>Maandag 7 september</h3>
+                    <button class="start-button" onclick="fullpage_api.moveSectionDown()"><i class='bx bxs-down-arrow' ></i></button>
+                </div>
+              <div class="slide-placeholder">
+                <img src="img/opkamp.jpg" alt="" />
+              </div>
+            </div>
+        </div>
+
+         <div class="section" id="section14">
+            <img src="img/curio.png" style="width: 100px; position: absolute; left: 50px; top: 50px;" alt="">
+    
+            <div class="slide-container">
+              <!-- Right Side: Content -->
+                <div class="slide-content">
+                    <h1>Inschrijving Kamp</h1>
+                    <h3>https://curio.codes/intro</h3>
+                    <button class="start-button" onclick="fullpage_api.moveSectionDown()"><i class='bx bxs-down-arrow' ></i></button>
+                </div>
+              <div class="slide-placeholder">
+                <img src="img/qrkamp.png" alt="" />
+              </div>
+          
+            </div>
+        </div>
+
+        <div class="section" id="section15">
+        <img src="img/curio.png" style="width: 100px; position: absolute; right: 100px; top: 50px;" alt="">
+
+        <div class="slide-container">
+          <!-- Left Side: Full Image -->
+          <div class="slide-placeholder">
+            <img src="img/background1.jpg" alt="Placeholder Image" />
+          </div>
+      
+          <!-- Right Side: Content -->
+            <div class="slide-content">
+                <h1>To do...</h1>
+                <h2>Aanmelden intro-kamp! (zie brief)</h2>
+                <h2>Curio account activeren</h2>
+                <h2>Gegevens controleren in Osiris via studentenportaal</h2>
+                <h2>Zie: student.curio.nl</h2>
+                <h2>Pasfoto uploaden via studentenportaal</h2>
+                <h2>Schoolgeld (18+)</h2>
+                <h2>Eventueel nieuwe laptop aanschaffen</h2>
+                <h2>Laptop in orde maken</h2>
+                <h2>Hou e-mail in de gaten voor verdere informatie</h2>
+                <button class="start-button" onclick="fullpage_api.moveSectionDown()"><i class='bx bxs-down-arrow' ></i></button>
+
+            </div>
+        </div>
+      </div>
+
+        <div class="section" id="section16">
+            <h1>Nog vragen?</h1>
+            <button class="start-button" onclick="fullpage_api.moveSectionDown()"><i class='bx bxs-down-arrow' ></i></button>
+        </div>
+
+
+        <div class="section" id="section17">
+            <h1>Tot donderdag!</h1>
+            <img style="width: 200px" src="img/curio.png" alt="">
+            <h2>Front-end Developer N3 <br> <small>(Allround Mediamaker)</small>  </h2>
+            <img style=" width: 250px; position: absolute; left: 200px; bottom: 150px" src="img/design.png" alt="">    
+            <img src="img/development.png" style="width: 250px; position: absolute; right: 200px; bottom: 150px" alt="">
+        </div>
+
+       
+  </div> 
+
+  <!-- fullpage.js Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.21/fullpage.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      new fullpage('#fullpage', {
+        navigation: true, // Enable navigation dots
+        navigationPosition: 'right',
+        scrollingSpeed: 800, // Smooth scrolling speed
+      });
+    });
+  </script>
+</body>
+</html>
